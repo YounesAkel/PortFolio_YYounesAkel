@@ -1,0 +1,302 @@
+
+/**----------------------------------------------------------------------------**/
+.mh-skills .mh-professional-skill{
+    padding-right:60px;
+    color:black;
+}
+.mh-skills .mh-professional-skill h3{
+    font-size:30px;
+    line-height:40px;
+    text-align:center;
+    font-weight:400px;
+    margin-bottom:60px;
+    font-family:'Poppins',sans-serif;
+    text-transform: uppercase;
+    color: orange;
+}
+.mh-professional-skills{
+    padding-left:20%;}
+ .mh-professional-skills h3{
+    font-size:30px;
+    line-height:40px;
+    text-align:center;
+    font-weight:400px;
+    margin-bottom:60px;
+    font-family:'Poppins',sans-serif;
+    text-transform: uppercase;
+    color: orange;
+}
+    .mh-professional-progress li{
+        display:inline-block;
+        margin:0auto;
+        float:none;
+        width:48%;
+        margin-bottom:30px;
+        text-align:center;  
+    } 
+    .mh-progress{
+        margin-bottom:10px;
+        font:900 1.14285/1;
+    }
+    .mh-progress .progressbar-text{
+        color:inherit !important;
+        font-family:'Poppins',sans-serif;
+    }
+    .progress.progress-line{
+        height:10px;
+        margin-right:60px;
+    }
+    .progress.progress-line .progress-text{
+        position:absolute;
+        top:50%;
+        left:100%;
+        width:60px;
+        transform:translateY(-35%);
+        text-align:center;
+        font-family:'Poppins',sans-serif;
+    }
+    .mh-progress.mh-progress-circle{
+        display:inline-block;
+        width:144px;
+        
+    }
+    .mh-progress path:nth-child(1){stroke:rgba(0,0,0,0.7);}
+    .mh-progress path:nth-child(2){stroke:orange !important;}
+.candidatos{
+   position:relative;
+   margin-bottom:15px;
+   font-family:'Poppins',sans-serif;
+}
+.candidatos .parcial{
+   display:inline-block;
+   width:100%;
+   vertical-align:middle;
+}
+.candidatos{
+    position: relative;
+    margin-bottom: 15px;
+    font-family: 'Poppines',sans-serif;
+}
+.candidatos .parcial{
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+.candidatos .parcial .info{
+   position: relative;
+   font-family: 'Poppines',sans-serif;
+}
+.candidatos .parcial .info .name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-style: 15px;
+    font-weight: 400px;
+    opacity: 0.9;
+    font-family: 'Poppines',sans-serif;
+ }
+ .candidatos .parcial .info .percentage-num{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+    font-weight: normal;
+ }
+ .candidatos .parcial .progressBar{
+    position: relative;
+    width: 100%;
+    height: 7px;
+    margin: 30px 0 2px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.5);
+ }
+ .candidatos .parcial .porcentagem{
+    /*position: absolute;*/
+    top: 0;
+    right: 0;
+    height: 7px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: orange;
+    transition: 3s all;
+    animation-duration: 2s;
+    animation-name: animationProgress;
+    font-family: 'Poppines',sans-serif;
+ }
+
+@keyframes animationProgress{
+    from{
+        width: 0;
+    }
+}
+
+
+.conttainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:700px){
+    .conttainer{
+        flex-direction: column;
+    }
+    .mh-professional-skills{
+        padding-left: 0;
+    }
+  
+}
+@media(max-width:400px){
+    .mh-progress.mh-progress-circle{
+        width: 108px;
+    }
+    .mh-professional-skills h3{
+        font-size: 25px;
+    }
+   
+  
+}
+/*------------------------------------EDUCATION-----------------------------------------------------*/
+.section2{
+    color: white;
+    /* height: 1143px; */
+}
+.containner{
+    padding: 2rem;
+    padding-bottom: 80px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+.top-section{
+    text-align: center;
+    padding: 4rem 0;
+    max-width: 0 auto;
+}
+.timeline{
+position: relative;
+min-height: 150px;
+}
+.line{
+    position: absolute;
+    /* z-index: 2; */
+    left: calc(50% - 1px);
+    width: 2px;
+    top: -50px;
+    bottom: -50px;
+    background-color: orange;
+   
+}
+.line:before,
+ .line:after{
+    position: absolute;
+    display: block;
+    content: '';
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: orange;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.line:after{
+    bottom: 0;
+}
+.section{
+    display: flex;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: 600ms ease;
+    position: relative;
+    /* z-index: 1; */
+    margin: 50px 0;
+    padding: 1rem;
+    border-radius: 1rem;
+    align-items: center;
+    min-height: 300px;
+}
+.section:nth-child(odd){
+    font-display: row-reverse;
+    transform: translateX(100%);
+}
+.bead{
+    position: absolute;
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: orange;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+}
+
+.content{
+    width: calc(50% - 2rem);
+    display: flex;
+    flex-direction: column;
+}
+.show-me:nth-child(n){
+    transform: none;
+    opacity: 1;
+}
+.section2 h1{
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: orange;
+    text-transform: uppercase;
+}
+.section2 h2{
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: orange;
+    text-transform: uppercase;
+}
+.section2 h5{
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: orangered;
+    text-transform: uppercase;
+}
+.section2 h4{
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgb(99, 75, 31);
+    text-transform: uppercase;
+}
+@media(max-width:700px){
+    .section2 h2{
+        font-size: 20px;
+        
+    }
+    .section2 h4{
+        font-size: 15px;
+    }
+    .top-section p{
+        width: 409px;
+    }
+}
+@media(max-width:400px){
+    .top-section p{
+        width: 282px !important;
+    }
+    .section2 h2{
+        font-size: 12px !important;
+        
+    }
+    .section2 h4{
+        font-size: 9px;
+    }
+    .section2 h5{
+        font-size: 11px;
+    }
+
+}
+@media(max-width:500px){
+  
+    .see_more p{
+        font-size: 20px;
+    }
+
+}

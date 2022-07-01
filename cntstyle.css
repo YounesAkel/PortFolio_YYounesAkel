@@ -1,0 +1,97 @@
+.contact-title
+ {
+     text-align: center;
+     margin-top: 100px;
+     color: #fff;
+     text-transform: uppercase;
+     transition: all 4s ease-in-out;
+
+ }
+
+   #cont-title
+  {
+      font-size: 32px;
+      line-height: 1Opx;
+
+  }
+
+  .contact-title h2
+  {
+      font-size: 16px;
+
+  }
+  
+ #contact-form
+ {
+     margin-top: 50px;
+     text-align: center;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+ .form-in
+ {
+     width: 600px;
+     background: transparent;
+     border: none;
+     outline: none;
+     border-bottom: 1px solid gray ;
+     color: #fff;
+     font-size: 16px;
+     margin-bottom: 16px;
+ }
+
+
+ #btsend
+ {
+     background: #ffA500;
+     border-color: transparent;
+     color:white;
+     font-weight: bold;
+     letter-spacing: 2px;
+     height: 50px;
+     margin-top: 20px;
+    }
+    #btsend:hover
+    {
+        background-color: white;
+        cursor: pointer;
+        color: #ffA500;
+    }
+
+    @media(max-width:700px){
+        #contact-form input{
+            width: 380px;
+        }
+        #contact-form textarea{
+            width: 380px;
+        }
+    }
+    @media(max-width:400px){
+        #contact-form input{
+            width: 264px;
+        }
+        #contact-form textarea{
+            width: 264px;
+        }
+
+    
+    }
+        @media(max-width:500px){
+          
+            .contact-form h3{
+        font-size: 10px;
+        max-width: 50%;
+            }
+            .contact-title h2
+            {
+                font-size: 10px;
+            }
+        }
+        @media(max-width:650px){
+          
+            .contact-form h3{
+        font-size: 10px;
+        
+            }
+        }

@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initiam-scale=1.0">
+    <title>younes akel portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cntstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <h1 class="logo"><a href="index.html">portfo<span>llio</span></a></h1>
+            <div class="nav-link">
+                <ul id="menu">
+                    <li><a href="index.html">home</a></li>
+                    <!-- <li><a href="#"> EXPERIENCE</a></li> -->
+                    <li><a href="skiedu.html">SKILLS & education</a></li>
+                    <li><a href="about-me.html">ABOUT me</a></li>
+                    <li><a href="contact-me.html">CONTACT me</a></li>
+
+
+
+                </ul>
+                <div class="sociale">
+                    <a href="#" onclick="showHideMenu()"><i class="fa fa-times"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100005714835883" target="_blank"><i
+                            class="fa fa-facebook"></i></a>
+                    <a href="https://ma.linkedin.com/in/younes-akel-7941a91b8" target="_blank"><i
+                            class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/YounesAkel" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#" onclick="showHideMenu()"><i class="fa fa-bars"></i></a>
+                </div>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="contact-title">
+                <h1 id="cont-title">Contact me</h1>
+                <h2>Ca me fait plaisir de recevoir votre message:</h2>
+
+            </div>
+
+            <div class="contact-form">
+
+                <form id="contact-form" action="https://formspree.io/f/myyoakey" method="POST">
+
+                    <input type="text" name="name" id="name" class="form-in" placeholder="Your Name" required>
+                    <br>
+                    <input type="text" name="num" id="name" class="form-in" placeholder="Your phone number" required>
+                    <br>
+                    
+
+                    <input type="text" name="email" id="email" class="form-in" placeholder="Your E-mail" required>
+                    <br>
+
+                    <textarea name="message" class="form-in" id="massage" placeholder="Message" rows="20"
+                        required></textarea>
+                    <br>
+
+                    <input type="submit" class="form-in" id="btsend" name="btsend" value="SEND MESSAGE">
+
+                </form><br>
+                 <h3> vous pouvez aussi me contacter directement sur mon email professionell:<br/> younes.akel@e-polytechnique.ma</h3>
+            </div>
+        </div>
+        <script>
+            var menu = document.getElementById('menu');
+
+            function showHideMenu() {
+
+                menu.classList.toggle("opened");
+
+            }
+        </script>
+</body>
+
+</html>

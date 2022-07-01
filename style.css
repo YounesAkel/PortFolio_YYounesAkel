@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*POUR modifieer le padding sans augmentation des dimensions*/
+    color:#fff;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.container{
+   background: linear-gradient(#000000de,#000000de),url('images/bureau.jpg');
+   min-height: 100vh;/*la logueur minimum doit prondre tous l'ecran*/
+   background-repeat: no-repeat;
+   background-size: cover;
+ display: flex;
+ flex-direction: column;
+ overflow: hidden;
+}
+
+nav{
+    padding: 2% 6%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-link{
+    /*background-color: aqua;*/
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    text-transform: uppercase;
+    font-size: 40px;
+    
+}
+.logo a{
+    text-decoration: none;
+}
+.logo span {
+    color: orange;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: auto;/*centrer l'élément*/
+}
+
+nav ul li{
+    margin: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.sociale a{
+    margin: 0 10px;
+    transition: 0.5s;
+    
+}
+nav ul li a:hover{
+    color: orange;
+}
+nav ul li a::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width:  0;
+    background-color: orange;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+.sociale a i{
+    transition: 0.5s;
+}
+.sociale a i:hover{
+    color: orange;
+}
+
+.sociale a:first-child, .sociale a:last-child{
+
+    display: none;
+}
+
+.main{
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main h2{
+    font-size: 72px;
+    text-transform: uppercase;
+
+}
+
+.main h1{
+    font-size: 120px;
+    color: orange;
+    text-transform: uppercase;
+}
+
+.botton{
+    text-decoration: none;
+    border: 1px solid orange;
+    padding: 15px 30px;
+    margin-top: 45px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.botton:hover{
+    background-color: orange;
+    transform: rotate(5deg);
+}
+/*----------------about-me-------------------------*/
+.about{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    overflow: hidden;
+}
+.content{
+   align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.about img{
+    width: 320px;
+    border-radius: 40px;
+    
+}
+.ma-photo{
+    margin-left: 40px;
+    overflow: hidden;
+    width: 379px;
+    height: 431px;
+    position: relative;
+}
+.about .text{
+    font-size: large;
+    padding: 50px ;
+    max-width: 914px;
+}
+.description{
+    position: absolute;
+    top: 326px;
+    width: 320px;
+    text-align: center;
+    font-size: large;
+    background-color: #000000de;
+    border-radius: 0 0 40px 40px;
+    transition: 0.5s;
+}
+.description:hover{
+    top: 115px;
+}
+#my-name{
+    font-size: 35px;
+    text-decoration: underline;
+}
+/*-----------------------------css responsive---------------------------------------*/
+/*style pour une tablette*/
+@media (max-width:900px){
+
+.sociale{
+position: fixed;
+right: 0;
+top: 0;
+display: flex;
+flex-direction: column;
+height: 100vh;
+width: 40px;
+background-color: black;
+justify-content: center;
+align-items: center;
+border-left: 1px solid rgb(44,44,44);
+}
+.sociale a{
+    margin: 10px 0;
+}
+.main h2{
+    font-size: 60px;
+}
+.main h1{
+    font-size: 80px;
+}
+
+
+}
+@media(max-width:400px){
+    .main h2{
+        font-size: 50px;
+    }
+    .main h1{
+        font-size: 40px !important;
+    }
+    .about img, .description{
+        width: 301px;
+    }
+}
+/*-------------------------------about responsive----------------------*/
+@media (max-width:1500px){
+    .content{
+      flex-direction: column; 
+      justify-content: center;
+        margin-top: 30px;
+  }
+  .nav-link ul.opened{
+    right: 40px;
+    z-index: 1;
+} 
+  }
+/*---------------style pour smartphone---------------------*/
+@media (max-width:750px){
+    
+.nav-link{
+    position: absolute;
+
+}
+.nav-link ul {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: #000000de;
+    flex-direction: column;/*rend compt que ul contient deja display flex onest pas besoin de le remontionner*/
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid rgb(44,44,44);
+    transition: right 0.5s;
+}
+.nav-link ul li{
+    flex-basis: 40px;/*la base des dimensiens*/
+    flex-grow: 1;/*les li peuvent s'agrandir en prolongement la taille de lafenetre*/
+    /*flex-shrink: 0;/*les li peuvent s'agrandir en prolongement la taille de lafenetre*/
+     max-height: 80px;
+     align-items: center;
+}
+.nav-link ul.opened{
+    right: 40px;
+}
+.logo{
+    text-align: center;
+    flex: 1;
+}
+
+.sociale a:first-child, .sociale a:last-child{
+  
+    position: fixed;
+    top: 0;
+}
+
+.sociale a:last-child{
+    display: block;
+    top: 0;
+}
+ul.opened ~ .sociale a:last-child{
+    display: none;
+}
+ul.opened ~ .sociale a:first-child{
+    display: block;
+}
+.main h1{
+    font-size: 60px;
+}
+}
+
+
+
+
