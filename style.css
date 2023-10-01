@@ -168,7 +168,6 @@ nav ul li a:hover::after{
     font-size: 35px;
     text-decoration: underline;
 }
-/*---------------------------------myprojects------------------------------------------*/
 .myproject{
     display: flex;
     flex-direction: row;
@@ -227,7 +226,6 @@ nav ul li a:hover::after{
         align-items: center;
     }
  
-    
 }
 /*-----------------------------css responsive---------------------------------------*/
 /*style pour une tablette*/
