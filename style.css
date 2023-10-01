@@ -168,6 +168,66 @@ nav ul li a:hover::after{
     font-size: 35px;
     text-decoration: underline;
 }
+/*---------------------------------myprojects------------------------------------------*/
+.myproject{
+    display: flex;
+    flex-direction: row;
+   padding-left: 10px;
+    margin-top: 30px;
+}
+.myproject img{
+    width: 400px;
+    border-radius: 5px;
+    
+}
+.project-photo{
+    margin-left: 40px;
+    overflow: hidden;
+    width: 420px;
+    height: 264px;
+    position: relative;
+}
+.myproject .text{
+    font-size: large;
+    padding: 50px ;
+    max-width: 914px;
+}
+.description-project{
+    position: absolute;
+    top: 147px;
+    width: 400px;
+    text-align: center;
+    font-size: large;
+    background-color: #000000de;
+    border-radius: 0 0 4px 4px;
+    transition: 0.5s;
+}
+
+#project-name{
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+@media (max-width:750px) {
+    .myproject{
+        flex-direction: column;
+    }
+    .myproject img{
+        width: 300px;
+       
+    }
+    .description-project{
+        width: 300px;
+    }
+}
+@media (max-width:1500px) {
+    .myproject{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+}
 /*-----------------------------css responsive---------------------------------------*/
 /*style pour une tablette*/
 @media (max-width:900px){
