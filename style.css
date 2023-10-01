@@ -162,7 +162,7 @@ nav ul li a:hover::after{
     transition: 0.5s;
 }
 .description:hover{
-    top: 115px;
+    top: 244px;
 }
 #my-name{
     font-size: 35px;
