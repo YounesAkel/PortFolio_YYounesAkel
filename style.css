@@ -178,8 +178,7 @@ nav ul li a:hover::after{
 }
 
 .row2{
-    align-items: center;
-    justify-content: center;
+    margin-left: 97px;
     display: flex;
     flex-direction: row;
 }
