@@ -143,7 +143,7 @@ nav ul li a:hover::after{
     margin-left: 40px;
     overflow: hidden;
     width: 379px;
-    height: 431px;
+    height: 330px;
     position: relative;
 }
 .about .text{
@@ -153,7 +153,7 @@ nav ul li a:hover::after{
 }
 .description{
     position: absolute;
-    top: 326px;
+    top: 250px;
     width: 320px;
     text-align: center;
     font-size: large;
@@ -162,7 +162,7 @@ nav ul li a:hover::after{
     transition: 0.5s;
 }
 .description:hover{
-    top: 244px;
+    top: 146px;
 }
 #my-name{
     font-size: 35px;
