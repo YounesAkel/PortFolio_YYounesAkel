@@ -174,7 +174,7 @@ nav ul li a:hover::after{
     align-items: center;
     justify-content: center;
     display: flex;
-    flex-direction: row;
+    /*flex-direction: row;*/
 }
 
 .row2{
