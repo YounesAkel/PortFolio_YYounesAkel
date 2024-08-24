@@ -178,9 +178,11 @@ nav ul li a:hover::after{
 }
 
 .row2{
-    margin-left: 97px;/*mli tzid chi projet akhor matnsach thiid hadi*/
+   /* margin-left: 70px;mli tzid chi projet akhor matnsach tmodifi hadi ola zid .row3*/
     display: flex;
-    flex-direction: row;
+   /* flex-direction: row;*/
+    align-items: center;
+    justify-content: center;
 }
 .myproject{
    
